@@ -1,0 +1,7 @@
+
+
+
+    <h1>{{ patient.name }}</h1>
+    <p>{{ patient.description }}</p>
+    <p><a href="{{ patient.document.url }}">Download document</a></p>
+    <img src="{{ patient.qrcode_set.first.code_image.url }}" alt="QR code">
